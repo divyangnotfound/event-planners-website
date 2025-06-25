@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us Section</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="aboutus.css">
+    <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet'>
+    
+</head>
+<body>
+    <div class="topnav">
+        <ul>
+       <li> <a href="aboutus.html">ABOUT US</a>
+        <div class="submenu">
+            <ul >
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="our-staff.html" >Our Staff</a></li>
+            </ul>
+        </div>
+       
+    </li>
+        <li><a href="service.html">SERVICES</a>
+        <div class="submenu">
+            <ul>
+                <li><a href="services-wedding.html">Weddings</a></li>
+                <li><a href="services-social.html">Social Gatherings</a></li>
+                <li><a href="services-cultural.html">Cultural events</a></li>
+                <li><a href="services-corporate.html">Corporate events</a></li>
+            </ul>
+        </div></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="joinus.html">Join Us</a></li>  
+        <li><a href="contactus.html">CONTACT US</a></li>
+        </ul>
+        <a href="event.html"><img id="logo" src="logo1.png"></a>
+    </div>  
+</header>
+
+<div class="hen">
+    <span>About<br><h1>Hendecagon Event Planners</h1></span>
+</div>
+
+<div class="block">
+        <div class="infinite">
+            <h1>Infinite possibilities.</h1>
+        </div>
+        <div class="about">
+            <div class="info">
+                <p>Founded in 2011, Hendecagon Event Planners  was created out of a love for dynamic events and fine dining. Our goal is to provide unparalleled event services and outstanding customer service.
+                </p>
+                <p>Why Hendecagon? Because with us, there are infinite possibilities. Big or small, we are committed to creating one-of-a-kind events that your guests will remember for years to come. Customization is guaranteed, from your floor plan to your bar menu and signature lounge furniture.</p>
+                <p>We work with the best vendors to provide planning and design services at the venue of your dreams, and we also offer full services at The Bridge Building Event Spaces, The Bell Tower, and The Estate at Cherokee Dock through exclusive venue management and in-house catering.</p>
+            </div>
+           
+        </div>
+    </div> 
+
+
+    <div class="section reveal">
+        <div class="container">
+            <div class="content-section">
+                <div class="content">
+                    <h3>WEDDINGS</h3>
+                    <p>Ease the stress of planning your big day with our team by your side. From coordinating your entire wedding weekend and bringing your design ideas to life, Infinity will help you every step of the way.</p>
+                    <br>
+                    <h3>CORPORATE EVENTS</h3>
+                    <p>Bring your brand to life through your next event with Infinity. We’ll work with your company to coordinate and manage everything you need to wow your employees and guests, from meeting planning and on-site coordination to security and transportation needs.</p><br>
+                    <h3>SOCIAL GATHERINGS</h3>
+                    <p>Getting engaged? Going all out for your next birthday? Infinity can help you throw the party of your dreams, turning your vision into a reality and coordinating everything you need from the design, event rentals, and even entertainment.
+
+                    </p>
+                    <br>
+                    <h3>CULTURAL EVENTS</h3>
+                    <P>The events designed for entertainment and enjoyment of a more or less wide audience. Cultural events are events of some importance related to some branch of art, culture or values. These events aim to propagate and disseminate cultural themes.</P>
+                </div>
+               
+            </div>
+            <div class="image-section">
+                <img src="hendecagon.jpeg">
+            </div>
+        </div>
+    </div>
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    <br><br>
+    <script>
+    const toTop=document.querySelector(".to-top");
+
+        window.addEventListener("scroll",()=>{
+            if(window.pageYOffset>100){
+                toTop.classList.add("active");
+            }
+            else{
+                toTop.classList.remove("active");
+            }
+        })
+        </script>
+    
+        <script src="script.js"></script>
+        <script>
+           function reveal(){
+               var reveals=document.querySelectorAll(".reveal");
+               for(var i=0;i<reveals.length;i++)
+               {
+                   var windowHeight=window.innerHeight;
+                   var elementTop=reveals[i].getBoundingClientRect().top;
+                   var elementVisible=100;
+                   if(elementTop<windowHeight-elementVisible)
+                   {
+                       reveals[i].classList.add("active");
+                   }
+                   else{
+                       reveals[i].classList.remove("active");
+                   }
+               }
+           }
+           window.addEventListener("scroll",reveal);
+       </script>
+       
+   <!-- <h2 class="h2 reveal">Our Team</h2>
+   <div class="main reveal">
+     
+       <div class="profile-card">
+           <div class="img">
+               <img src="1655394668826.jpeg">
+           </div>
+           <div class="caption">
+               <h3>Benjamin Murray</h3>
+               <p>CEO</p>
+               <div class="social-links">
+                   <a href="#"><i class="fab fa-facebook"></i></a>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-twitter"></i></a>
+               </div>
+           </div>
+       </div>
+       <div class="profile-card">
+           <div class="img">
+               <img src="avatar-200x200-center-top.jpg">
+           </div>
+           <div class="caption">
+               <h3>Cassandra Clare</h3>
+               <p>Finance Director</p>
+               <div class="social-links">
+                   <a href="#"><i class="fab fa-facebook"></i></a>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-twitter"></i></a>
+               </div>
+           </div>
+       </div>
+       <div class="profile-card">
+           <div class="img">
+               <img src="Barbara-Scalzi.jpg.webp">
+           </div>
+           <div class="caption">
+               <h3>Alexandra Knox</h3>
+               <p>General Manager</p>
+               <div class="social-links">
+                   <a href="#"><i class="fab fa-facebook"></i></a>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-twitter"></i></a>
+               </div>
+           </div>
+       </div>
+       </div>
+       <div class="main reveal">
+       <div class="profile-card">
+           <div class="img">
+               <img src="img2.jpg">
+           </div>
+           <div class="caption">
+               <h3>Emily Grant</h3>
+               <p>COO (Chief Operating Officer)</p>
+               <div class="social-links">
+                   <a href="#"><i class="fab fa-facebook"></i></a>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-twitter"></i></a>
+               </div>
+           </div>
+       </div>
+       <div class="profile-card">
+           <div class="img">
+               <img src="img1.jpg">
+           </div>
+           <div class="caption">
+               <h3>Evan Baker</h3>
+               <p>Sales Director</p>
+               <div class="social-links">
+                   <a href="#"><i class="fab fa-facebook"></i></a>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-twitter"></i></a>
+               </div>
+           </div>
+       </div>
+       <div class="profile-card">
+           <div class="img">
+               <img src="images-2.jpeg">
+           </div>
+           <div class="caption">
+               <h3>Abigail  Hemmings</h3>
+               <p>Event Director</p>
+               <div class="social-links">
+                   <a href="#"><i class="fab fa-facebook"></i></a>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-twitter"></i></a>
+               </div>
+           </div>
+       </div>
+   </div>
+</div> -->
+   <script src="./Font-Awesome/all.min.js"></script>
+   <footer class="footer-distributed">
+
+    <div class="footer-left">
+        <h3><span>Hendecagon</span> Event Planners</h3>
+
+        <p class="footer-links">
+            <a href="event.html">Home</a>
+            |
+            <a href="aboutus.html">About</a>
+            |
+            <a href="contactus.html">Contact</a>
+            |
+            <a href="blog.html">Blog</a>
+        </p>
+
+        <p class="footer-company-name">Copyright © 2022 <strong>Hendecagon Event Planners </strong> All rights reserved</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <a href="https://goo.gl/maps/oCNbV9Rp7SLw5yir6"><i class="fa fa-map-marker"></i></a>
+            <p><span><a href="https://goo.gl/maps/oCNbV9Rp7SLw5yir6">GSFC University</a></span>
+                Vadodara</p>
+        </div>
+
+        <div>
+            <a href="tel:9265297099"><i class="fa fa-phone"></i></a>
+            <p> <a href="tel:9265297099">+91 9265297099</a></p>
+        </div>
+        <div>
+            <a href="mailto:21BT04073@gsfcuniversity.ac,in"><i class="fa fa-envelope"></i></a>
+            <p><a href="mailto:21BT04073@gsfcuniversity.ac,in">21BT04073@gsfcuniversity.ac.in</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>About the company</span>
+            <strong>Hendecagon</strong> is the place where you can give a life to your imagination.
+            In the very beginning, our team will create a personalised proposal tailored to fit all of your needs.
+        </p>
+        <div class="wrapper ">
+            <a href="https://www.facebook.com/segaroevents">
+                <div class="icon facebook">
+                <span><i class="fab fa-facebook-f"></i></span>
+            </div>
+            </a>
+            
+            <a href="https://in.pinterest.com/wedmegood/">
+                <div class="icon pinterest">
+                <span><i class="fab fa-pinterest"></i></span>
+            </div>
+        </a>
+        <a href="https://www.linkedin.com/groups/2928970/">
+            <div class="icon linked-in">
+                <span><i class="fab fa-linkedin"></i></span>
+            </div>
+        </a>
+            
+           <a href="https://www.instagram.com/jxinee._/">
+            <div class="icon instagram">
+                <span><i class="fab fa-instagram"></i></span>
+            </div>
+        </a> 
+        <a href="https://twitter.com/penguinsevents">
+            <div class="icon twitter">
+                <span><i class="fab fa-twitter"></i></span>
+            </div>
+        </a>
+        
+        </div>
+    </div>
+</footer>
+</body>
+</html>

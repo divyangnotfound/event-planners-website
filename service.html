@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html alng="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width,initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+    <title>Services</title>
+    <link rel="stylesheet" href="service.css">
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <ul>
+           <li> <a href="aboutus.html">ABOUT US</a>
+            <div class="submenu">
+                <ul >
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="our-staff.html" >Our Staff</a></li>
+                </ul>
+            </div>
+           
+        </li>
+            <li><a href="service.html">SERVICES</a>
+            <div class="submenu">
+                <ul>
+                    <li><a href="services-wedding.html">Weddings</a></li>
+                    <li><a href="services-social.html">Social Gatherings</a></li>
+                    <li><a href="services-cultural.html">Cultural events</a></li>
+                    <li><a href="services-corporate.html">Corporate events</a></li>
+                </ul>
+            </div></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="joinus.html">Join Us</a></li>  
+            <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+            <a href="event.html"><img id="logo" src="logo1.png"></a>
+        </div>  
+    </header>
+    <input type="radio" name="Photos" id="check1" checked>
+    <input type="radio" name="Photos" id="check2">
+    <input type="radio" name="Photos" id="check3">
+    <input type="radio" name="Photos" id="check4">
+    <!-- <div class="top-content">
+        <h3>Services</h3>
+        <label for="check1"><a href="services-corporate.html" style="text-decoration:none;color:black">Corporate Events</label></a>
+        <label for="check2"><a href="services-cultural.html" style="text-decoration:none;color:black">Cultural Events</label></a>
+        <label for="check3"><a href="services-social.html" style="text-decoration:none;color:black">Social Gatherings</label></a>
+        <label for="check4"><a href="services-wedding.html" style="text-decoration:none;color:black">Weddings</label></a>
+        <label for="check5">Themed Events</label> 
+    </div> -->
+    <p class="heading">SERVICES</p>
+<!-- FRANSI CODE FOR CIRCLES-->
+    <div class="eve">
+        <div class="wedding"><h2>Weddings</h2><br>
+            <div class="img-wrapper">
+                <a href="services-wedding.html">
+                 <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                </a><div class="text-wrapper">
+                   <h3 id="top"></h3>
+                   <h1 id="bottom"></h1>
+                 </div></div>
+                 
+       
+        <h6>With every last detail taken care of, we're here to ensure the day you've always dreamed of will be the day you'll never forget.</h6>
+    </div>
+     <div class="corporate">
+        <h2>Corporate Events</h2><br>
+        <div class="img-wrapper"><a href="services-corporate.html"><img src="https://i.pinimg.com/564x/53/89/ec/5389ec34671563161bc02a938ff0ee7c.jpg"></a></div>
+       
+        <h6>Wow your guests with a unique corporate experience that aligns with your company's mission and elevates your brand.</h6>
+ 
+    </div>
+   <div class="Social">
+    <h2>Social Gatherings</h2><br>
+    <div class="img-wrapper"><a href="services-social.html"><img src="https://images.unsplash.com/photo-1621112904887-419379ce6824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"></a></div>
+   
+    <h6>
+        From a show stopping engagement celebration to an epic surprise birthday party, you dream it and we'll make it a reality.
+    </h6>
+   </div>
+ 
+</div>
+<div class="eve1">
+    <div class="cultural">
+        <h2>Cultural Events</h2><br>
+        <div class="img-wrapper"> <a href="services-cultural.html"><img src="https://i.pinimg.com/564x/1c/72/09/1c720964dd23ade6e7f828d0921ff501.jpg"></a></div>
+       
+        <h6>Culture is the heart of society. Organise events that honour traditions, customs and values while being grand and extravagant. </h6><br><br><br><Br><br><Br><br><br>
+    </div>
+    </div>
+    <script>
+        function reveal(){
+            var reveals=document.querySelectorAll(".reveal");
+            for(var i=0;i<reveals.length;i++)
+            {
+                var windowHeight=window.innerHeight;
+                var elementTop=reveals[i].getBoundingClientRect().top;
+                var elementVisible=150;
+                if(elementTop<windowHeight-elementVisible)
+                {
+                    reveals[i].classList.add("active");
+                }
+                else{
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+        window.addEventListener("scroll",reveal);
+    </script>
+     <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3><span>Hendecagon</span> Event Planners</h3>
+
+            <p class="footer-links">
+                <a href="event.html">Home</a>
+                |
+                <a href="aboutus.html">About</a>
+                |
+                <a href="contactus.html">Contact</a>
+                |
+                <a href="blog.html">Blog</a>
+            </p>
+
+            <p class="footer-company-name">Copyright © 2022 <strong>Hendecagon Event Planners </strong> All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <a href="https://goo.gl/maps/oCNbV9Rp7SLw5yir6"><i class="fa fa-map-marker"></i></a>
+                <p><span><a href="https://goo.gl/maps/oCNbV9Rp7SLw5yir6">GSFC University</a></span>
+                    Vadodara</p>
+            </div>
+
+            <div>
+                <a href="tel:9265297099"><i class="fa fa-phone"></i></a>
+                <p> <a href="tel:9265297099">+91 9265297099</a></p>
+            </div>
+            <div>
+                <a href="mailto:21BT04073@gsfcuniversity.ac,in"><i class="fa fa-envelope"></i></a>
+                <p><a href="mailto:21BT04073@gsfcuniversity.ac,in">21BT04073@gsfcuniversity.ac.in</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                <strong>Hendecagon</strong> is the place where you can give a life to your imagination.
+                In the very beginning, our team will create a personalised proposal tailored to fit all of your needs.
+            </p>
+            <div class="wrapper ">
+                <a href="https://www.facebook.com/segaroevents">
+                    <div class="icon facebook">
+                    <span><i class="fab fa-facebook-f"></i></span>
+                </div>
+                </a>
+                
+                <a href="https://in.pinterest.com/wedmegood/">
+                    <div class="icon pinterest">
+                    <span><i class="fab fa-pinterest"></i></span>
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/groups/2928970/">
+                <div class="icon linked-in">
+                    <span><i class="fab fa-linkedin"></i></span>
+                </div>
+            </a>
+                
+               <a href="https://www.instagram.com/jxinee._/">
+                <div class="icon instagram">
+                    <span><i class="fab fa-instagram"></i></span>
+                </div>
+            </a> 
+            <a href="https://twitter.com/penguinsevents">
+                <div class="icon twitter">
+                    <span><i class="fab fa-twitter"></i></span>
+                </div>
+            </a>
+            
+            </div>
+        </div>
+    </footer>
+   
+</body>
+</html>
